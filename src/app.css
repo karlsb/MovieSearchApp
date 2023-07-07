@@ -1,0 +1,31 @@
+
+.movie-grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1rem;
+        padding: 1rem;
+}
+
+/*  */
+
+.center-children{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.blue {
+    background-color: blue;
+}
+
+.movie-container{
+    width:200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.movie-container:hover{
+    transform: scale(1.3);
+}
