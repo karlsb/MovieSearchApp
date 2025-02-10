@@ -1,6 +1,6 @@
-# Movie Search App
+## Movie Search App
 
-A Very simple movie searching front-end web application built in React.
+A movie searching front-end web application built in React.
 
 The appliction is only a front-end that uses omdbapi which provides movie data.  
 
@@ -8,13 +8,51 @@ The purpose of the application was for me to showcase working with existing api'
 
 The styling of the application is very basic, it focuses more on functionality rather than style.
 
-# Built with
+## Tech Stack
 - [React](https://react.dev/) (create-react-app)
 - [React-Router](https://reactrouter.com/en/main)
 - [omdbapi](https://www.omdbapi.com/)
 - [Tailwind.css](https://tailwindcss.com/)
 
-# Application overview
+## Installation & Running Locally
+
+### Prerequisites 
+
+- [Node.js](https://nodejs.org/en)
+- [Git](https://git-scm.com/downloads)
+
+
+### Setup
+
+install dependencies
+
+```bash
+npm install
+```
+
+(optional)
+Fix vulnerability issues. I don't recommend running  ```npm audit fix --force```
+
+```bash
+npm audit fix
+```
+
+You may still get warnings from npm, but the app should run fine locally.
+
+### Connect to API
+
+Get an api key from [OmdbAPI](https://www.omdbapi.com/apikey.aspx)
+
+Create a .env file in the project root directory
+
+inside .env, set the variable REACT_APP_OMDB_API_KEY = your_api_key
+
+### Run the web app
+
+```bash
+npm start
+```
+## Application overview
 _________
 The discover view is the landing page. Here the user can type in a search query and look for movies through next/prev page button on the bottom of the screen (out of view in the image). The user can also press a thumbnail to see more info about the movie.
 
@@ -29,32 +67,7 @@ _________
 The Favorites view shows all the movies the user has added to favorites. Here we can also remove movies we no longer want in our favorites with the "Remove" button.  
 
 ![image](/images/Favorites.png)
-# Get Started
 
-- Install Node v18.16.0
-- Clone the repo
-- run following commands:
-
-installing dependencies
-```bash
-npm install
-```
-
-(optional)
-Fix vulnerability issues. Don't run  ```npm audit fix --force```
-```bash
-npm audit fix
-```
-(optional)
-make sure no warnings when following is run.
-```bash
-npm audit --omit=dev
-```
-
-run the app on localhost:
-```bash
-npm start
-```
 
 # Implementation Details
 
